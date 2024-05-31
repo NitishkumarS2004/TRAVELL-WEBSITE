@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelbuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Travelbuddy</h1>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button id="lo">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <video src="Nusa-penida.mp4" muted loop autoplay></video>
+    
+    <div class="glass">
+        <div class="info">
+            <h1 id="greeting">Book Today!</h1><br>
+            <div class="sub">
+                <p>Enjoy the best tour experiences <br>
+                Travelbuddy has to offer</p> 
+            </div>
+        </div>
+        <button id="but">Book now</button>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Booking Form</h2>
+            <p>Fill in your details to book your tour.</p>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="date">Date of Tour:</label>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Button to change background color -->
+    <button id="changeColorButton">Change Background Color</button>
+    <input type="color" id="colorPicker" style="display: none;">
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
